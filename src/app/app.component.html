@@ -1,12 +1,19 @@
-<input type="text" [(ngModel)]="studentName">
-<button (click)="generatePhrase()">Generate New Wallet</button>
+<div id="inputArea">
+  <input type="text" [(ngModel)]="studentName" placeholder="Enter Student Name">
+  <button (click)="generatePhrase()">Generate New Wallet</button>
+</div>
+
 <main>
   <section id="studentSection">
-    Wallet for {{studentName}}
+    <h2>
+      Wallet for {{studentName}}
+    </h2>
     <app-phrase-area></app-phrase-area>
   </section>
   <section id="instructorSection">
-    Wallet for {{studentName}}
+    <h2>
+      Wallet for {{studentName}}
+    </h2>
     <app-phrase-area></app-phrase-area>
   </section>
 </main>

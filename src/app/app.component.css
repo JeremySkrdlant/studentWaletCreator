@@ -11,3 +11,25 @@ section {
 #studentSection {
     border-right: 1px solid #333;
 }
+
+#inputArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+button {
+    margin-left: 20px;
+}
+
+input {
+    width: 300px;
+}
+
+@media print {
+    #inputArea {
+        display: none;
+    }
+}
