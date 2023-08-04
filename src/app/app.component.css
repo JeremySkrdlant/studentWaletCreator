@@ -1,0 +1,13 @@
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    flex: 1;
+    padding: 10px;
+}
+
+#studentSection {
+    border-right: 1px solid #333;
+}

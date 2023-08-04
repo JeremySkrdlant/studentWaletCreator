@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WalletService } from './wallet.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'studentWalletCreator';
+  studentName = "";
+
+  constructor(private wallet: WalletService) { }
+
+  generatePhrase() {
+    this.wallet.generateMnemonic();
+  }
 }
