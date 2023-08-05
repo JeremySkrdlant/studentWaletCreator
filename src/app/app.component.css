@@ -9,7 +9,7 @@ section {
 }
 
 #studentSection {
-    border-right: 1px solid #333;
+    border-right: 1px dotted #ccc;
 }
 
 #inputArea {
@@ -28,8 +28,29 @@ input {
     width: 300px;
 }
 
+h2 {
+    font-weight: 100;
+    color: #690712;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
 @media print {
     #inputArea {
         display: none;
     }
+
+    section {
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 30px;
+    }
+
+    #instructorSection {
+        padding-left: 30px;
+        padding-right: 0px;
+    }
+
 }

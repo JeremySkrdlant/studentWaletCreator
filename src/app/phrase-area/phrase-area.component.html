@@ -1,6 +1,9 @@
-<h1>Address - {{wallet.address}}</h1>
+<h1>{{wallet.address}}</h1>
 <div class="wordArea">
-    <div *ngFor="let word of wallet.mnemonic">
+    <div class="word" *ngFor="let word of wallet.mnemonic">
         {{word}}
     </div>
 </div>
+<p>This wallet is not for storing real money. Your instructor has a copy of this. Anyone with this phrase has access to
+    this wallet. This will be used to digitally sign documents and play around with test networks. <b>Keep this wallet
+        in a safe location. You will need it for this program!</b></p>
